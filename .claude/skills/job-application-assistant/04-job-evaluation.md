@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** C#, SQL, ASP.NET Core, Blazor Server, application modernization (legacy migration), REST API development
+**Moderate match areas:** AWS (Lambda, DynamoDB), Docker/Kubernetes/GitOps, Agile/Scrum, business systems analysis, data cleaning/migration, Python (early/learning), React/Tailwind
+**Weak match areas:** Deep cloud architecture/DevOps ownership, machine learning/data science, senior-level system design
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full-stack/.NET application development, application modernization projects, IT/business systems analyst work
+**Moderate:** Backend/API development, data/analytics roles, cloud/DevOps-adjacent roles
+**Entry-level:** Dedicated data science/ML roles, senior or leadership-track roles (still early career - Fall 2026 graduate)
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Build toward technical leadership through full-stack, backend/API, or data/analytics work early in career - genuinely open to any of these directions
+- Gain broad exposure across the software/IT stack rather than being siloed into one narrow function
+- Progress toward increased responsibility and autonomy over time
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: taking initiative and stepping up rather than waiting to be assigned; problems with visible, tangible impact; opportunities to contribute and see real influence on outcomes
+- Tasks that drain: vague expectations, messy/unstructured workflows, difficult interpersonal dynamics with supervisors or colleagues
+- Non-task factors: clear/honest/kind leadership (Koch's PBM culture is the explicit positive reference point), autonomy, degree of exposure beyond a single silo
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Internship at Textron concluded August 2026; actively job-searching now. Graduating Fall 2026 with a BBA in MIS (Minor in CS). Salary baseline in mind is $70k+, but flexible for roles offering strong experience and growth - not a hard floor.
+- **Flexibility**: Open to relocation and remote work anywhere in the US. Also open to a co-op/internship for the final semester if a full-time offer isn't available before graduation.
+- **Professional development**: Prioritizes growth path, autonomy, and exposure beyond a single silo over any specific role title - open to full-stack, backend/API, data/analytics, or IT/business analyst directions.
 
 ### 6. Salary Benchmark (Optional)
 

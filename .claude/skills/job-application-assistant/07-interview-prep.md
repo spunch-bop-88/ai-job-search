@@ -12,30 +12,52 @@ Structure answers as: **Situation** (context), **Task** (your responsibility), *
 
 Keep answers to 1-2 minutes. Be specific. End with what you learned or would do differently.
 
-## Ready-Made STAR Examples
+## STAR Candidates (Complete Manually)
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- /setup Path A extracted these from Tony's CV. The Situation/Task/Action are drafted from the
+CV bullets, but Result is left blank since no concrete outcome/metric was stated - fill it in
+with the actual measurable result (or honest qualitative outcome) before using these in an
+interview. Do not fabricate a number here. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Legacy Application Modernization (Textron Aviation)
+**Source:** CV - IT Developer Intern, Textron Aviation Inc. (Jun-Aug 2026)
+**What happened:** Modernized a legacy engineering application from ASP.NET WebForms to a .NET 10 architecture (Blazor Server + ASP.NET Core Web API), including REST APIs, service-layer components for eBOM search workflows, and Docker/Kubernetes deployment via GitOps.
+**Why it matters:** Good for "tell me about a technical project you're proud of," "describe working with legacy code," "how do you approach modernizing a system."
+**S/T/A/R stub:**
+- Situation: A legacy engineering application at Textron Aviation was built on ASP.NET WebForms and needed modernizing.
+- Task: Contribute to migrating it to a .NET 10 / Blazor Server / ASP.NET Core Web API architecture, including eBOM search workflows.
+- Action: Developed REST APIs and reusable service-layer components; migrated legacy SQL business logic into backend services while preserving behavior; deployed via Docker and Kubernetes through GitOps; diagnosed and resolved auth/config/DB connectivity issues along the way.
+- Result: *(fill in: how far did the migration get, was it adopted, any feedback from the team?)*
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. AWS Lambda Root-Cause Debugging (Koch Inc.)
+**Source:** CV - Product Analyst Co-op, Koch Inc. (Flint Hills Resources)
+**What happened:** Investigated AWS Lambda functions to identify the root cause of hidden, serious integration errors, then experimented and corrected issues across SQL, DynamoDB, and JSON.
+**Why it matters:** Good for "describe a challenging technical problem you solved," "tell me about debugging something with an unclear root cause."
+**S/T/A/R stub:**
+- Situation: Hidden integration errors were occurring in enterprise applications tied to AWS Lambda functions.
+- Task: Find and fix the root cause.
+- Action: Investigated the Lambda functions, then experimented with and corrected the issue across SQL, DynamoDB, and JSON files.
+- Result: *(fill in: what was the actual root cause, how was it confirmed fixed, any downstream impact?)*
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Stalled Documentation Migration Project (Koch Inc.)
+**Source:** CV - Product Analyst Co-op, Koch Inc. (Flint Hills Resources)
+**What happened:** Picked up a 4-year-old refinery equipment documentation migration project, using SQL and Excel to query, cross-reference, clean, and prepare thousands of records for system migration.
+**Why it matters:** Good for "tell me about a time you took ownership of something that had stalled," "describe working with large or messy datasets," and ties directly into Tony's self-described strength of driving forward stalled/messy work.
+**S/T/A/R stub:**
+- Situation: A refinery equipment documentation migration project had been open for 4 years without being finished.
+- Task: Pick it up and move it toward completion.
+- Action: Used SQL and Excel to query, cross-reference, clean, and prepare thousands of records for the system migration.
+- Result: *(fill in: how much of the backlog did you clear, did the project reach completion or a clear milestone, any recognition?)*
+
+### 4. Agile Sprint Facilitation (Koch Inc.)
+**Source:** CV - Product Analyst Co-op, Koch Inc. (Flint Hills Resources)
+**What happened:** Facilitated Agile sprint planning sessions, helping the team define and prioritize tasks to optimize workflow and improve delivery timelines.
+**Why it matters:** Good for "tell me about a time you improved a team process," "describe your Agile experience," and initiative/leadership questions - relevant given Tony's stated interest in growing toward leadership roles.
+**S/T/A/R stub:**
+- Situation: The team needed a more structured approach to defining and prioritizing sprint work.
+- Task: Facilitate sprint planning sessions.
+- Action: Ran the planning sessions, helping the team define and prioritize tasks.
+- Result: *(fill in: what changed in workflow/delivery timelines as a result, any specific feedback?)*
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 

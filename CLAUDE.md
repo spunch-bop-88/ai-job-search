@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Tony Cao
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Tony Cao, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,82 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Tony Cao
+- **Location:** Wichita, Kansas, USA (open to relocation and remote roles nationwide)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | English | Native |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Recently completed an internship at Textron Aviation Inc. (concluded August 2026); graduating Fall 2026 with a BBA in Management Information Systems (Minor in Computer Science) from Wichita State University. Actively seeking full-time roles starting after graduation, or a co-op/internship for the final semester in the interim.
+- **LinkedIn:** linkedin.com/in/tony-cao-q
+- **LinkedIn headline:** *(not yet set - update if you'd like this reflected)*
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **BBA in Management Information Systems, Minor in Computer Science** (Expected Fall 2026) - Wichita State University
+  - GPA: 3.87/4.00
+  - Topics: business systems analysis, database design, software development, information systems
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **IT Developer - Intern** (Jun 2026 - Aug 2026) - **Textron Aviation Inc.** (Wichita, Kansas)
+  - Modernized a legacy engineering application from ASP.NET WebForms to a .NET 10 architecture using Blazor Server and ASP.NET Core Web API
+  - Developed REST APIs and reusable service-layer components supporting eBOM search workflows
+  - Analyzed and migrated legacy SQL business logic into backend services while preserving application behavior
+  - Deployed the application with Docker and Kubernetes through GitHub and GitOps
+  - Diagnosed and resolved authentication, config, and database connectivity issues in dev environments
+
+- **Product Analyst Co-op** (Sep 2024 - Jan 2025) - **Koch Inc. (Flint Hills Resources)** (Wichita, Kansas)
+  - Supported 75+ environmental applications used across refinery operations and regulatory compliance
+  - Coordinated with software engineers, DBAs, data architects, product owners, and business stakeholders to upgrade, maintain, or decommission enterprise applications
+  - Facilitated Agile sprint planning sessions to help the team prioritize tasks and improve delivery timelines
+  - Picked up a stalled 4-year refinery equipment documentation migration project, using SQL and Excel to query, cross-reference, clean, and prepare thousands of records for system migration
+  - Investigated AWS Lambda functions to identify the root cause of hidden integration errors, correcting issues across SQL, DynamoDB, and JSON
+
+### Independent Projects
+- **Movie Kiosk Application** (Spring 2024): Windows desktop app built in VB.NET with a SQL database backend; designed admin and user CRUD functionality for movie records using classes, constructors, and objects
+- **Club Front-End Web App** (in progress): Public-facing front end (no backend) for a student club, built with React and Tailwind CSS, using AI-assisted development tooling
+
+### Leadership & Activities
+- GDPT/BYA Youth Group (2014 - Present): leadership, weekly volunteering, community development, philanthropy
+- Wichita State University MIS Club (Fall 2023 - Present)
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** C#, SQL, ASP.NET Core, Blazor Server, MudBlazor, .NET
+- **Secondary:** Python (learning), VB.NET, C++, AWS (Lambda, DynamoDB), React, Tailwind CSS
+- **Domain:** IT/business systems analysis, application modernization, enterprise data migration
+- **Software:** Docker, Kubernetes, GitOps, GitHub, GitHub Copilot, Azure DevOps, SSMS, Postman, Excel, Tableau, VSCode/Visual Studio, Agile/Scrum
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+None yet.
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+None.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+None listed yet - see Leadership & Activities above for community/leadership involvement.
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- No formal assessment (DISC/MBTI/PI/StrengthsFinder) taken yet - self-assessed. See 02-behavioral-profile.md for full detail. -->
+- **Deliberate, detail-oriented decision-maker** - prefers to think things through rather than decide quickly; actively working on building faster intuition
+- **Initiative-driven** - most energized by stepping up and taking ownership rather than waiting to be told
+- **Strengths:** clear communication, adaptability across working styles (independent, paired, structured, or ad hoc - as long as expectations are communicated), picking up and driving forward stalled or messy projects
+- **Growth areas:** navigating difficult supervisors/colleagues (actively wants to improve here); building quicker decision-making and intuition
+- **Thrives in:** clear, honest, kind, leadership-oriented cultures - explicitly cited Koch's Principle Based Management (PBM) culture as a strong personal fit
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Taking initiative and stepping up rather than waiting to be assigned
+- Working on problems with real, visible impact where contribution and influence are tangible
+- Growing toward leadership and increased responsibility over time
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Open across full-stack/software development, backend/API development, and data/analytics roles - still early career and genuinely open to any of these directions
+- IT/business systems analyst roles are also a strong interest, not just BSA-titled roles specifically
+- Local Wichita-area employers worth watching: Koch Industries, Textron/Cessna/Boeing (Wichita aerospace corridor) - but the search is nationwide, not limited to these
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+No hard deal-breakers identified. Priorities (not hard constraints): autonomy, meaningful growth, exposure beyond a single silo, a path toward increased responsibility, and interesting problem-solving. Salary baseline in mind: $70k+, but flexible for roles offering strong experience/growth.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -134,7 +134,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable - LaTeX page-break decisions are unpredictable. Iterate until these all pass:
 - [ ] CV compiled with **lualatex** (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors). Cover letter compiled with **xelatex** (cover.cls requires fontspec). If a custom template is active (registered via `/add-template`), compile with its declared command instead — see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`/`06-cover-letter-templates.md`.
-- [ ] **CV is exactly 2 pages** - not 1, not 3
+- [ ] **CV is exactly 1 page** - not 2 (Tony is early-career; 1 page is the target set during `/setup`, overriding the framework's usual 2-page default - see `05-cv-templates.md`)
 - [ ] **No orphaned `\cventry` titles** - a job/education title must never sit at the bottom of a page with its bullets spilling to the next page. Use `\needspace{5\baselineskip}` before each `\cventry` to prevent this, and `\enlargethispage{2-3\baselineskip}` to rescue a trailing section that just barely spills
 - [ ] **Cover letter is exactly 1 page** - signature block must fit with the body, never overflow
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`

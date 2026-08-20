@@ -12,11 +12,11 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (your market's job boards):
+- **indeed.com** - largest general US job board
+- **linkedin.com/jobs** - LinkedIn job listings (filter: United States, nationwide); also covered by `linkedin-search` CLI
+- **dice.com** - tech-focused job board (optional)
+- **ziprecruiter.com** - another major US board (optional)
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -27,54 +27,59 @@ Queries are grouped by priority. Write **each category in every language from yo
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Full-Stack / Software Development (.NET)
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+These match Tony's strongest and most recent hands-on experience.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:indeed.com "Software Engineer" entry level
+site:indeed.com ".NET Developer" entry level
+site:indeed.com "Software Developer" C# entry level
+site:linkedin.com/jobs "Application Developer" United States
+site:linkedin.com/jobs "Full Stack Developer" C# .NET
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: IT / Business Systems Analyst & Data/Analytics
 
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+Tony's other genuine interest area - analyst work he enjoyed at Koch, not limited to "Business Systems Analyst"-titled roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:indeed.com "IT Analyst" entry level
+site:indeed.com "Business Systems Analyst" entry level
+site:indeed.com "Data Analyst" SQL entry level
+site:linkedin.com/jobs "Product Analyst" United States
+site:linkedin.com/jobs "Systems Analyst" entry level United States
+```
+
+### Priority 3: Backend / API & Cloud (adjacent pivot)
+
+Adjacent roles he could pivot into given AWS/Docker/Kubernetes exposure.
+
+```
+site:indeed.com "Backend Developer" C# SQL entry level
+site:indeed.com "API Developer" .NET entry level
+site:dice.com "Cloud Engineer" entry level AWS
+site:linkedin.com/jobs "DevOps Engineer" entry level United States
+```
+
+### Priority 4: Broader IT / Technical Consulting
+
+Wider net for general technical and IT roles.
+
+```
+site:indeed.com "IT Developer" entry level
+site:indeed.com "Technical Consultant" .NET
+site:linkedin.com/jobs "Junior Developer" United States
+site:linkedin.com/jobs "Associate Software Engineer" United States
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Tony is open to relocation and remote work nationwide - this is a national search, not a commute-radius search:
+- **Wichita, Kansas** - home base; local employers worth watching include Koch Industries and the Wichita aerospace corridor (Textron/Cessna, Spirit AeroSystems, Boeing)
+- **Remote (US)** - ideal, actively searched
+- **Anywhere else in the US** - acceptable; open to relocating for the right role
+- No borderline/too-far tiers apply given the nationwide scope
 
 ## Language Filter
 

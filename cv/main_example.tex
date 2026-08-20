@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Tony Cao
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -33,7 +32,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Tony Cao - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -41,15 +40,14 @@
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Tony}{Cao}
+\address{Wichita, Kansas}{}{}
+\phone[mobile]{(316) 252-9878}
+\email{caottschool@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/tony-cao-q}{LinkedIn}}
 
 \begin{document}
 
@@ -60,7 +58,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Management Information Systems student at Wichita State University (GPA 3.87/4.00, expected graduation Fall 2026) with hands-on experience across full-stack development, application modernization, and business systems analysis. Skilled in C\#, SQL, ASP.NET Core, and Blazor, with practical exposure to cloud infrastructure (AWS), DevOps tooling (Docker, Kubernetes, Azure DevOps), and Agile delivery. Combines technical development ability with strong stakeholder communication, gained supporting enterprise application portfolios and cross-functional teams in aerospace and energy sector environments.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -70,15 +68,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Full-Stack \& Backend Development}: C\#, ASP.NET Core, Blazor Server, MudBlazor, REST API design
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Databases \& Data Migration}: SQL Server (SSMS), data cleaning and cross-referencing, large-scale record migration
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud \& DevOps}: AWS (Lambda, DynamoDB), Docker, Kubernetes, GitOps, Azure DevOps
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Business Analysis \& Agile Delivery}: stakeholder coordination, Agile sprint planning, enterprise application lifecycle management
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Tools \& Platforms}: GitHub, GitHub Copilot, Postman, Excel, Tableau, VS Code / Visual Studio
 
 \end{itemize}
 
@@ -91,33 +89,39 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Jun 2026-Aug 2026}{IT Developer -- Intern}{Textron Aviation Inc.}{Wichita, Kansas}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Modernized a legacy engineering application from ASP.NET WebForms to a .NET 10 architecture using Blazor Server and ASP.NET Core Web API
+    \item Developed REST APIs and reusable service-layer components supporting eBOM search workflows
+    \item Analyzed and migrated legacy SQL business logic into backend services while preserving application behavior
+    \item Deployed the application with Docker and Kubernetes through GitHub and GitOps
+    \item Diagnosed and resolved authentication, config, and database connectivity issues in dev environments
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Sep 2024-Jan 2025}{Product Analyst Co-op}{Koch Inc. (Flint Hills Resources)}{Wichita, Kansas}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Supported 75+ environmental applications used across refinery operations and regulatory compliance
+    \item Coordinated with software engineers, DBAs, data architects, product owners, and business stakeholders to upgrade, maintain, or decommission enterprise applications
+    \item Facilitated Agile sprint planning sessions, helping the team define and prioritize tasks to improve delivery timelines
+    \item Picked up a stalled 4-year refinery equipment documentation migration project, using SQL and Excel to query, cross-reference, clean, and prepare thousands of records for system migration
+    \item Investigated AWS Lambda functions to identify the root cause of hidden integration errors, correcting issues across SQL, DynamoDB, and JSON files
 \end{itemize}}}
 
-\vspace{3pt}
+\end{itemize}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-\end{itemize}}}
-
+\item{\textbf{Movie Kiosk Application} (Spring 2024) -- Windows desktop app built in VB.NET with a SQL database backend; designed admin and user CRUD functionality for movie records using classes, constructors, and objects.}
 \end{itemize}
 
 % ============================================================
@@ -128,16 +132,21 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2026 (expected)}{BBA in Management Information Systems, Minor in Computer Science}{Wichita State University}{Wichita, Kansas}{}{\vspace{1pt}
+In progress, expected Fall 2026. GPA: 3.87/4.00. Topics: business systems analysis, database design, software development, information systems.
 }}
 
-\vspace{3pt}
+\end{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+% ============================================================
+%     LEADERSHIP AND ACTIVITIES
+% ============================================================
 
+\section{Leadership and Activities}
+\vspace{1pt}
+\begin{itemize}
+\item{GDPT/BYA Youth Group (2014--Present) -- leadership, weekly volunteering, community development, philanthropy}
+\item{Wichita State University MIS Club (Fall 2023--Present)}
 \end{itemize}
 
 % ============================================================
@@ -147,27 +156,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item English (native)
 \end{itemize}
 
 % ============================================================

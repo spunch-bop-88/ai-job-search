@@ -20,7 +20,8 @@ All CVs use the moderncv LaTeX package with the "banking" style and "blue" color
 cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
 ```
 
-Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on main_<company>_<role>.pdf (1 page, ...)`. Any page count other than 1 is a failure that must be fixed before presenting to the user. <!-- Tony is early-career (BBA expected Fall 2026, 2 internships) - 1 page is the standard convention at this stage and was chosen explicitly during /setup over the framework's 2-page default. -->
+
 
 ## Document Structure
 
@@ -129,12 +130,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Software/Application Developer roles:**
+> Management Information Systems graduate (Wichita State University, GPA 3.87/4.00) with hands-on experience modernizing enterprise applications in C#, ASP.NET Core, and Blazor Server. As an IT Developer Intern at Textron Aviation, built REST APIs and service-layer components migrating a legacy WebForms application to a .NET 10 architecture, deployed via Docker and Kubernetes through GitOps. Comfortable working across the stack, from SQL-backed business logic to Blazor front ends, and collaborating directly with engineers, architects, and business stakeholders to align technical solutions with real operational needs.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For IT/Business Systems Analyst roles:**
+> Management Information Systems graduate combining hands-on development skills with business analysis experience. As a Product Analyst Co-op at Koch Inc. (Flint Hills Resources), supported 75+ environmental compliance applications, coordinated with software engineers, DBAs, and business stakeholders on system upgrades and decommissions, and facilitated Agile sprint planning to improve delivery timelines. Pairs SQL and data-cleaning skills with a track record of picking up long-running, cross-functional projects and driving them to completion.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -216,9 +216,9 @@ Wherever the CV names a verifiable artifact - a public project, a hackathon entr
 After writing the CV and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean. Workflow:
 
 1. Run `lualatex -interaction=nonstopmode main_<company>_<role>.tex`
-2. Check the output page count: must be exactly 2
-3. Read the PDF via the Read tool and visually inspect both pages
-4. Check for **orphaned entries**: a `\cventry` title line must never sit alone at the bottom of page 1 with its bullets on page 2
+2. Check the output page count: must be exactly 1
+3. Read the PDF via the Read tool and visually inspect the page
+4. Check for **orphaned entries**: a `\cventry` title line must never sit alone at the bottom of the page with its bullets pushed onto a second page
 
 ### Fixing common page-break problems
 
@@ -232,14 +232,14 @@ Include `\usepackage{needspace}` in the preamble.
 
 **Caveat - use `\needspace` before entries, never before `\section` headings.** A section-level `\needspace` pushes the entire section (heading plus content) to the next page whenever the request does not fit, stranding empty space above and typically *adding* a page instead of saving one. Apply it only to the individual `\cventry` that actually orphans, and only after a compile shows the orphan.
 
-**Problem: one trailing section spills to page 3 (e.g., References alone on page 3)**
-Add `\enlargethispage{2-3\baselineskip}` before a late section (e.g., before `\section{Honors and Awards}`) to stretch page 2 by a few lines. This is the standard LaTeX rescue for near-miss overflows.
+**Problem: one trailing section spills to page 2 (e.g., References alone on page 2)**
+Add `\enlargethispage{2-3\baselineskip}` before a late section (e.g., before `\section{Honors and Awards}`) to stretch page 1 by a few lines. This is the standard LaTeX rescue for near-miss overflows.
 
-**Problem: 3 pages with significant content on page 3**
+**Problem: 2 pages with significant content on page 2**
 Cut content — do not compress geometry or `\vspace`. See "Relevance-weighted cutting" below for the rule.
 
-**Problem: content finishes early on page 2 (feels thin)**
-Restore the highest-relevance item that was previously cut — a CV that ends mid-page 2 looks incomplete.
+**Problem: content finishes early on the page (feels thin)**
+Restore the highest-relevance item that was previously cut — a CV that ends noticeably short of a full page looks incomplete, especially at entry level where every line of real content matters.
 
 ## ATS Parseability
 
@@ -283,20 +283,23 @@ Two independent causes, both easy to avoid:
 
 **Add this to the step 5d checks**: after extracting the text layer, confirm every experience entry shows a start *and* an end separated by an ASCII hyphen. Because the failure is silent and invisible in the PDF, the candidate otherwise discovers it only while filling in the application form.
 
-## Page Budget - Hard 2-Page Limit
+## Page Budget - Hard 1-Page Limit (Entry-Level)
 
-The CV **must** fit on exactly 2 pages when compiled. Use these content limits as a guide:
+<!-- Tony chose 1 page over the framework's usual 2-page default during /setup, matching the
+standard convention for an early-career candidate (BBA expected Fall 2026, 2 internships). -->
+
+The CV **must** fit on exactly 1 page when compiled. Use these content limits as a guide:
 
 | Section | Max budget |
 |---------|-----------|
-| Profile statement | 3-4 lines |
-| Skills | 5 items, each 1-2 lines |
-| Most recent role | 4-5 bullets |
+| Profile statement | 2-3 lines |
+| Skills | 4-5 items, each 1 line |
+| Most recent role | 3-4 bullets |
 | Previous role | 2-3 bullets |
-| Older roles | 2 bullets (1 line each) |
-| Education | 2-3 entries |
-| Publications | 2-3 entries |
-| Awards | 3 entries, single line each |
+| Older roles | 1-2 bullets (1 line each) |
+| Education | 1-2 entries |
+| Projects | 1-2 entries, single line each |
+| Awards / Leadership | 2-3 entries, single line each |
 | References | "Available upon request." (single line) |
 
 **If in doubt, cut rather than squeeze.** Reducing `\vspace` or geometry scale to force-fit content makes the CV look cramped.
@@ -326,7 +329,7 @@ Cut the lowest-total-score line first, regardless of which section it sits in.
 
 - Do not mechanically cut from the bottom of a static section list without checking relevance. "Cut the oldest role first" is wrong if that role is literally about the skill the posting asks for.
 - Do not cut the one concrete example the cover letter leans on. Relevance is measured against the cover letter you wrote, not just the job posting — interviewers will have read both.
-- Do not cut to fit if the fit is borderline (2.02 pages). Prefer `\enlargethispage{2-3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 3 that is more than a single trailing section).
+- Do not cut to fit if the fit is borderline (1.02 pages). Prefer `\enlargethispage{2-3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 2 that is more than a single trailing section).
 
 ## Recommended Section Order
 
