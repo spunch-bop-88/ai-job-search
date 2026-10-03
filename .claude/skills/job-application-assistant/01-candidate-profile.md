@@ -7,11 +7,12 @@ framework_version: 1.1.1
 ## Identity
 - **Name:** Tony Cao
 - **Location:** Wichita, Kansas, USA
+- **Work authorization:** U.S. citizen (eligible for citizenship-required and clearance-track roles)
 - **Phone:** (316) 252-9878
 - **Email:** caottschool@gmail.com
 - **LinkedIn:** linkedin.com/in/tony-cao-q
 - **GitHub:** none
-- **Status:** Recently completed an internship at Textron Aviation Inc. (concluded August 2026); graduating Fall 2026 (BBA in Management Information Systems, Minor in Computer Science, Wichita State University). Actively seeking full-time roles starting after graduation, or a co-op/internship for the final semester in the interim.
+- **Status:** Recently completed an internship at Textron Aviation Inc. (concluded August 2026); graduating Fall 2026 (BBA in Management Information Systems, Minor in Computer Science, Wichita State University). Actively seeking both full-time roles starting after graduation AND internships (equal priority) - plans to start a master's program in Fall 2027, which keeps internship eligibility open (Summer 2027 is the cleanest fit; Jan-Aug 2027 is a gap with no enrollment, so Spring 2027 roles requiring current enrollment may not qualify). Master's program/field not yet specified.
 - **Constraints:** Open to relocation and remote roles nationwide - not limited to Wichita.
 
 ### Languages
@@ -52,7 +53,7 @@ Wichita, Kansas
 
 ## Independent Projects
 - **Movie Kiosk Application** (Spring 2024): Windows desktop app built in VB.NET with a SQL database backend. Designed admin and user CRUD functionality for movie records using classes, constructors, and objects.
-- **Club Front-End Web App** (in progress): Public-facing front end (no backend) for a student club, built in React and Tailwind CSS, using AI-assisted development tooling.
+- **Club Front-End Web App** (in progress): Public-facing front end (no backend) for a student club, built in React and Tailwind CSS, using GitHub Copilot (primary) and Claude Code for AI-assisted development.
 
 ## Leadership & Activities
 - GDPT/BYA Youth Group (2014 - Present): leadership, weekly volunteering, community development, philanthropy

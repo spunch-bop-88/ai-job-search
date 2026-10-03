@@ -76,10 +76,33 @@ site:linkedin.com/jobs "Associate Software Engineer" United States
 ## Location Filter
 
 Tony is open to relocation and remote work nationwide - this is a national search, not a commute-radius search:
-- **Wichita, Kansas** - home base; local employers worth watching include Koch Industries and the Wichita aerospace corridor (Textron/Cessna, Spirit AeroSystems, Boeing)
+- **Wichita, Kansas** - home base; local employers worth watching include Koch Industries and the Wichita aerospace corridor (Textron/Cessna, Boeing). Boeing absorbed Spirit AeroSystems in 2026 - Spirit no longer exists as a separate Wichita employer, don't search for it.
 - **Remote (US)** - ideal, actively searched
 - **Anywhere else in the US** - acceptable; open to relocating for the right role
 - No borderline/too-far tiers apply given the nationwide scope
+
+## Company Portal Checks
+
+Beyond the role-keyword searches above, some companies are worth checking directly on their own career portal rather than relying on LinkedIn/freehire to surface them - large employers with many subsidiary brands (Koch) or huge posting volume (Microsoft) can bury a good match under LinkedIn's relevance ranking, or never post it to a third-party board at all.
+
+**Method:** `WebSearch site:<company careers domain>` to find candidate postings, then `WebFetch` each one individually to confirm it's still live before treating it as real - job-search-engine indexes cache stale/closed postings (confirmed: a stale Koch link 404'd during a real check). Never present a posting you haven't verified live.
+
+**Reliability is ATS-platform-dependent, confirmed by direct testing:**
+- **Avature** (Koch): partial success - the category-listing page renders an initial slice server-side (~6 results) that WebFetch can read, but "load more" pagination is JS-driven and invisible to a plain fetch. The `&from=N` URL parameter does **not** paginate (tested - returns identical results regardless of N). Work around the cap with `site:` searches for specific role keywords, then verify each hit individually.
+- **Workday** (Salesforce, and also the ATS behind the Baird and Kyndryl postings seen in `/rank`): renders **entirely client-side** - WebFetch gets nothing, not even a partial slice. Do not spend effort trying; these need a human browsing in an actual browser.
+- **Custom in-house sites** (Microsoft): hit or miss per page - some pages return real static listings, others need a live search interaction WebFetch can't perform.
+- **Marketing/pipeline-only pages** (Cisco, Adobe encountered so far): often show zero live listings even when the company is actively hiring - these run more on a "register your interest" waitlist model than published reqs. Don't treat an empty result as "nothing open," just as "nothing found this way."
+
+**Watch list** (check periodically, not necessarily every `/scrape` run - this is manual per-company digging, not a CLI):
+- **Koch Industries** (`koch.avature.net`) - Wichita HQ, Tony's former co-op employer (Flint Hills Resources is a Koch company). Check the "Information Systems & Technology" and "Data & Analytics" career-field categories.
+- **Textron / Cessna** (`textron.com/careers` or LinkedIn company page) - Wichita aerospace corridor.
+- **Boeing** (`boeing.com/careers`) - Wichita site; absorbed Spirit AeroSystems in 2026.
+- **Garmin** (`garmin.com/careers`) - Olathe, KS; GPS/aerospace-adjacent tech, strong early-career hiring.
+- **Cerner / Oracle Health** (`oracle.com/careers` or search "Oracle Health Kansas City") - Kansas City, MO; large enterprise healthcare-software employer, C#/.NET common in their stack.
+- **T-Mobile** (`careers.t-mobile.com`) - Overland Park, KS HQ (former Sprint).
+- **USAA** (`usaa.com/careers`) - large enterprise employer with a strong new-grad technology program; .NET/Java shop.
+- **Applied Systems** (`applied.com/careers` or LinkedIn company page) - insurance software, direct C#/SQL/REST match; scored highest in Tony's `/rank` results, worth checking their own site for roles beyond what LinkedIn surfaced.
+- **Microsoft** (`careers.microsoft.com`) - worth an occasional check of the "recent graduate" and "university internship" pages despite mixed hit rate; huge volume of postings, some genuinely entry-level.
 
 ## Language Filter
 
